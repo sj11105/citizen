@@ -76,20 +76,49 @@ export default function AnimatedLogin() {
               <h1 className="text-3xl font-bold">Sign Up</h1>
               <p className="text-gray-400">Get the best scheme for you!</p>
             </div>
-
-            <div className="relative">
-              <div className="absolute inset-0 flex items-center">
-                <div className="w-full border-t border-gray-800"></div>
+            <div className="flex-1 max-w-md">
+              <div className="space-y-16">
+                <div className="space-y-2 text-center">
+                  <h1 className="text-3xl font-bold">Sign Up</h1>
+                  <p className="text-gray-400">Get the best scheme for you!</p>
+                </div>
+                <div className="space-y-4">
+                  <div className="space-y-2">
+                    <Input
+                      type="text"
+                      placeholder="First Name"
+                      className="bg-gray-900 border-gray-800"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Input
+                      type="email"
+                      placeholder="Email"
+                      className="bg-gray-900 border-gray-800"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Input
+                      type="password"
+                      placeholder="Password"
+                      className="bg-gray-900 border-gray-800"
+                    />
+                  </div>
+                  <div className="relative">
+                    <div className="absolute inset-0 flex items-center">
+                      <div className="w-full border-t border-gray-800"></div>
+                    </div>
+                    <div className="relative flex justify-center text-xs uppercase">
+                      <span className="bg-black px-2 text-gray-400"></span>
+                    </div>
+                  </div>
+                  <div className="grid  gap-4">
+                    <Button className="w-full bg-white text-black hover:bg-gray-100">
+                      Sign Up
+                    </Button>
+                  </div>
+                </div>
               </div>
-              <div className="relative flex justify-center text-xs uppercase">
-                <span className="bg-black px-2 text-gray-400"></span>
-              </div>
-            </div>
-            <div className="grid  gap-4">
-              <FileUploadDemo />
-              <Button className="w-full bg-white text-black hover:bg-gray-100">
-                Sign Up       
-              </Button>
             </div>
           </div>
         </div>
